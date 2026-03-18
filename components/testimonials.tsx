@@ -1,4 +1,7 @@
-import { Star } from "lucide-react"
+"use client"
+
+import { useRef, useState } from "react"
+import { Star, ChevronLeft, ChevronRight } from "lucide-react"
 
 const testimonials = [
   {
@@ -29,6 +32,24 @@ const testimonials = [
 ]
 
 export function Testimonials() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const [current, setCurrent] = useState(0)
+
+  function scrollTo(index: number) {
+    const el = scrollRef.current
+    if (!el) return
+    const cardWidth = el.scrollWidth / testimonials.length
+    el.scrollTo({ left: cardWidth * index, behavior: "smooth" })
+    setCurrent(index)
+  }
+
+  function onScroll() {
+    const el = scrollRef.current
+    if (!el) return
+    const cardWidth = el.scrollWidth / testimonials.length
+    setCurrent(Math.round(el.scrollLeft / cardWidth))
+  }
+
   return (
     <section id="opiniones" className="bg-white py-12 md:py-20">
       <div className="container mx-auto px-4">
@@ -57,26 +78,87 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 md:gap-5">
+        {/* Mobile carousel */}
+        <div className="md:hidden">
+          <div className="relative">
+            {/* Left arrow */}
+            {current > 0 && (
+              <button
+                onClick={() => scrollTo(current - 1)}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md border border-border/50 text-foreground"
+                aria-label="Anterior"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+            )}
+            {/* Right arrow */}
+            {current < testimonials.length - 1 && (
+              <button
+                onClick={() => scrollTo(current + 1)}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md border border-border/50 text-foreground"
+                aria-label="Siguiente"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            )}
+
+            <div
+              ref={scrollRef}
+              onScroll={onScroll}
+              className="-mx-4 px-4 flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              {testimonials.map((testimonial) => (
+                <div
+                  key={testimonial.name}
+                  className="snap-center shrink-0 w-[80vw] bg-[#f8fafc] p-5 rounded-xl border border-border/50"
+                >
+                  <div className="flex items-center gap-0.5 mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <p className="text-xs leading-relaxed text-muted-foreground mb-3">
+                    &ldquo;{testimonial.text}&rdquo;
+                  </p>
+                  <p className="text-xs font-bold text-foreground">{testimonial.name}</p>
+                  <p className="text-[11px] text-muted-foreground">Opinión en Google</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Dots */}
+          <div className="flex justify-center gap-1.5 mt-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => scrollTo(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === current ? "w-5 bg-primary" : "w-1.5 bg-primary/25"
+                }`}
+                aria-label={`Ir a ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop grid */}
+        <div className="hidden md:grid gap-5 md:grid-cols-3 xl:grid-cols-5">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-[#f8fafc] p-5 rounded-xl border border-border/50 transition-all duration-300 hover:shadow-md md:p-6 md:rounded-2xl"
+              className="bg-[#f8fafc] p-6 rounded-2xl border border-border/50 transition-all duration-300 hover:shadow-md"
             >
               <div className="flex items-center gap-0.5 mb-3">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400 md:h-4 md:w-4" />
+                  <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <p className="text-xs leading-relaxed text-muted-foreground mb-3 md:text-sm md:mb-4">
+              <p className="text-sm leading-relaxed text-muted-foreground mb-4">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
-              <p className="text-xs font-bold text-foreground md:text-sm">
-                {testimonial.name}
-              </p>
-              <p className="text-[11px] text-muted-foreground md:text-xs">
-                Opinión en Google
-              </p>
+              <p className="text-sm font-bold text-foreground">{testimonial.name}</p>
+              <p className="text-xs text-muted-foreground">Opinión en Google</p>
             </div>
           ))}
         </div>
