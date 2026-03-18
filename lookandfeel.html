@@ -1,0 +1,669 @@
+<html lang="es" class="scroll-smooth" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Instituto Cardiovascular | Excelencia en Zona Norte</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17" vid="5"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" vid="6"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="7">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" vid="9">
+    <script vid="10">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f8f8',
+                            100: '#d9eeee',
+                            200: '#b6dede',
+                            300: '#8ac8c8',
+                            400: '#63adad',
+                            500: '#469191',
+                            600: '#387575',
+                            700: '#305f5f',
+                            800: '#2a4d4d',
+                            900: '#254141',
+                            950: '#132525',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'glow': '0 0 40px -10px var(--tw-shadow-color)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style vid="11">
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="w-full h-full bg-[#f8fafc] text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900" vid="12">
+
+    
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-300" vid="13">
+        <div class="glass-panel rounded-full px-6 py-3 flex items-center justify-between shadow-soft" vid="14">
+            <a href="#" class="flex items-center gap-3 group" vid="15">
+                <div class="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center text-white group-hover:bg-brand-700 transition-colors shadow-glow shadow-brand-600/30" vid="16">
+                    <i class="ph-fill ph-heartbeat text-2xl" vid="17"></i>
+                </div>
+                <div class="flex flex-col" vid="18">
+                    <span class="font-bold text-[15px] leading-none text-slate-900 tracking-tight" vid="19">Instituto</span>
+                    <span class="font-medium text-[13px] leading-none text-brand-600" vid="20">Cardiovascular</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-1 bg-slate-100/50 p-1 rounded-full border border-slate-200/50" vid="21">
+                <a href="#inicio" class="px-5 py-2 rounded-full text-sm font-semibold text-brand-700 bg-white shadow-sm" vid="22">Inicio</a>
+                <a href="#especialidades" class="px-5 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-white/50 transition-all" vid="23">Especialidades</a>
+                <a href="#equipo" class="px-5 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-white/50 transition-all" vid="24">Equipo</a>
+                <a href="#pacientes" class="px-5 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-white/50 transition-all" vid="25">Pacientes</a>
+                <a href="#contacto" class="px-5 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-white/50 transition-all" vid="26">Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-3" vid="27">
+                <div class="hidden md:flex flex-col items-end mr-2" vid="28">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400" vid="29">Emergencias</span>
+                    <a href="tel:01145550000" class="text-sm font-bold text-slate-700 hover:text-brand-600 transition-colors" vid="30">(011) 4555-0000</a>
+                </div>
+                <a href="#turnos" class="px-6 py-2.5 rounded-full bg-slate-900 text-white text-sm font-semibold hover:bg-brand-600 transition-colors shadow-md flex items-center gap-2" vid="31">
+                    <i class="ph ph-calendar-check text-lg" vid="32"></i>
+                    <span class="hidden sm:inline" vid="33">Turnos</span>
+                </a>
+                <button class="lg:hidden w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600" vid="34">
+                    <i class="ph ph-list text-xl" vid="35"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main vid="36">
+        
+        <section id="inicio" class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden bg-white" vid="37">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-50/50 to-transparent pointer-events-none" vid="38"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative" vid="39">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center" vid="40">
+                    
+                    
+                    <div class="lg:col-span-6 z-10 flex flex-col items-start" vid="41">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100/50 border border-brand-200 text-brand-700 text-sm font-semibold mb-8" vid="42">
+                            <span class="relative flex h-2.5 w-2.5" vid="43">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75" vid="44"></span>
+                              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500" vid="45"></span>
+                            </span>
+                            Atención presencial y videoconsultas
+                        </div>
+                        
+                        <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.05] mb-6" vid="46">
+                            Su corazón, <br vid="47">
+                            en las <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-400" vid="48">mejores manos.</span>
+                        </h1>
+                        
+                        <p class="text-lg text-slate-600 leading-relaxed mb-10 max-w-xl" vid="49">
+                            Institución líder en Zona Norte dedicada a la prevención, diagnóstico y tratamiento cardiovascular. Tecnología de punta y calidez humana.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4" vid="50">
+                            <a href="#turnos" class="px-8 py-4 rounded-full bg-brand-600 text-white text-base font-semibold text-center hover:bg-brand-700 hover:shadow-glow hover:shadow-brand-600/30 transition-all duration-300 flex items-center justify-center gap-2" vid="51">
+                                <i class="ph ph-calendar-plus text-xl" vid="52"></i>
+                                Solicitar Turno Ahora
+                            </a>
+                            <a href="#especialidades" class="px-8 py-4 rounded-full bg-white border-2 border-slate-200 text-slate-700 text-base font-semibold text-center hover:border-brand-300 hover:bg-brand-50 transition-all duration-300 flex items-center justify-center gap-2" vid="53">
+                                Ver Especialidades
+                                <i class="ph ph-arrow-down-right text-xl" vid="54"></i>
+                            </a>
+                        </div>
+
+                        <div class="mt-12 flex items-center gap-4" vid="55">
+                            <div class="flex -space-x-3" vid="56">
+                                <img src="https://ui-avatars.com/api/?name=Dr+A&amp;background=e2e8f0&amp;color=475569" alt="Doctor" class="w-12 h-12 rounded-full border-4 border-white z-30" vid="57">
+                                <img src="https://ui-avatars.com/api/?name=Dra+M&amp;background=cbd5e1&amp;color=334155" alt="Doctor" class="w-12 h-12 rounded-full border-4 border-white z-20" vid="58">
+                                <img src="https://ui-avatars.com/api/?name=Dr+P&amp;background=94a3b8&amp;color=1e293b" alt="Doctor" class="w-12 h-12 rounded-full border-4 border-white z-10" vid="59">
+                            </div>
+                            <div vid="60">
+                                <div class="flex text-amber-400 text-sm" vid="61">
+                                    <i class="ph-fill ph-star" vid="62"></i><i class="ph-fill ph-star" vid="63"></i><i class="ph-fill ph-star" vid="64"></i><i class="ph-fill ph-star" vid="65"></i><i class="ph-fill ph-star-half" vid="66"></i>
+                                </div>
+                                <p class="text-sm font-medium text-slate-600 mt-0.5" vid="67">Atención calificada por <span class="text-slate-900 font-bold" vid="68">+2000</span> pacientes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="lg:col-span-6 relative flex justify-end" vid="69">
+                        <div class="relative w-full max-w-lg aspect-[3/4] rounded-t-[200px] rounded-b-[40px] bg-brand-100 overflow-hidden border-8 border-white shadow-2xl shadow-brand-900/10" vid="70">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-br from-brand-200/50 to-brand-50/20 mix-blend-multiply" vid="71"></div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-30" vid="72">
+                                <div class="w-[150%] h-[150%] rounded-full border-[40px] border-white/40 blur-sm translate-x-1/4 translate-y-1/4" vid="73"></div>
+                                <div class="absolute w-[100%] h-[100%] rounded-full border-[20px] border-brand-300/30 blur-md -translate-x-1/4 -translate-y-1/4" vid="74"></div>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center text-brand-700/20" vid="75">
+                                <i class="ph-fill ph-heartbeat text-[12rem]" vid="76"></i>
+                            </div>
+                        </div>
+
+                        
+                        <div class="absolute top-1/4 -left-8 lg:-left-16 glass-panel p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-[bounce_4s_infinite]" vid="77">
+                            <div class="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center" vid="78">
+                                <i class="ph-fill ph-activity text-2xl" vid="79"></i>
+                            </div>
+                            <div vid="80">
+                                <p class="text-[11px] font-bold uppercase text-slate-400 tracking-wider" vid="81">Monitoreo</p>
+                                <p class="text-base font-extrabold text-slate-900" vid="82">Ritmo Estable</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="absolute bottom-1/4 -right-4 lg:-right-8 glass-panel p-5 rounded-2xl shadow-xl border-l-4 border-l-brand-500" vid="83">
+                            <p class="text-[11px] font-bold uppercase text-slate-400 tracking-wider mb-2" vid="84">Próximo Turno</p>
+                            <div class="flex items-center gap-3" vid="85">
+                                <div class="bg-slate-100 p-2.5 rounded-lg text-slate-600" vid="86">
+                                    <i class="ph-fill ph-calendar-blank text-xl" vid="87"></i>
+                                </div>
+                                <div vid="88">
+                                    <p class="text-sm font-bold text-slate-900" vid="89">Mañana, 09:30 AM</p>
+                                    <p class="text-xs font-medium text-brand-600" vid="90">Dr. Rodríguez - Consultorio 3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 text-brand-200 dot-pattern -z-10" vid="91"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="relative z-20 -mt-10 max-w-7xl mx-auto px-6" vid="92">
+            <div class="bg-white rounded-3xl shadow-soft border border-slate-100 p-8" vid="93">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x-0 md:divide-x divide-slate-100" vid="94">
+                    <div class="flex flex-col items-center text-center px-4" vid="95">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mb-3" vid="96">
+                            <i class="ph-fill ph-star text-2xl" vid="97"></i>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mb-1" vid="98">+25</h3>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wide" vid="99">Años de Exp.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center px-4" vid="100">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mb-3" vid="101">
+                            <i class="ph-fill ph-users-three text-2xl" vid="102"></i>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mb-1" vid="103">12</h3>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wide" vid="104">Especialistas</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center px-4" vid="105">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mb-3" vid="106">
+                            <i class="ph-fill ph-microscope text-2xl" vid="107"></i>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mb-1" vid="108">100%</h3>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wide" vid="109">Tecnología Alta</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center px-4" vid="110">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mb-3" vid="111">
+                            <i class="ph-fill ph-handshake text-2xl" vid="112"></i>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mb-1" vid="113">+50</h3>
+                        <p class="text-sm font-medium text-slate-500 uppercase tracking-wide" vid="114">Obras Sociales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="especialidades" class="py-24 bg-[#f8fafc]" vid="115">
+            <div class="max-w-7xl mx-auto px-6" vid="116">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6" vid="117">
+                    <div class="max-w-2xl" vid="118">
+                        <div class="flex items-center gap-2 mb-4" vid="119">
+                            <div class="w-8 h-1 bg-brand-500 rounded-full" vid="120"></div>
+                            <h2 class="text-sm font-bold text-brand-600 uppercase tracking-widest" vid="121">Nuestros Servicios</h2>
+                        </div>
+                        <h3 class="text-4xl font-extrabold text-slate-900 leading-tight" vid="122">Estudios y consultas de <br vid="123">alta complejidad.</h3>
+                    </div>
+                    <p class="text-slate-600 text-lg max-w-md md:text-right border-l-4 md:border-l-0 md:border-r-4 border-brand-200 pl-4 md:pl-0 md:pr-4 py-2" vid="124">
+                        Abordaje integral para el diagnóstico y tratamiento preciso de patologías cardiovasculares.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" vid="125">
+                    
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-brand-500 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="126">
+                        <div class="flex justify-between items-start mb-6" vid="127">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors" vid="128">
+                                <i class="ph ph-stethoscope text-3xl" vid="129"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-brand-500 group-hover:text-white transition-colors" vid="130">
+                                <i class="ph ph-arrow-up-right" vid="131"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="132">Consulta Clínica</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="133">Evaluación inicial y seguimiento, control de hipertensión, aptos físicos y evaluación de riesgo cardiovascular global.</p>
+                    </div>
+
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-brand-400 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="134">
+                        <div class="flex justify-between items-start mb-6" vid="135">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors" vid="136">
+                                <i class="ph ph-waveform text-3xl" vid="137"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-brand-500 group-hover:text-white transition-colors" vid="138">
+                                <i class="ph ph-arrow-up-right" vid="139"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="140">Electrocardiograma</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="141">Estudio basal indispensable, rápido e indoloro para registrar la actividad eléctrica del corazón en reposo.</p>
+                    </div>
+
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-brand-300 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="142">
+                        <div class="flex justify-between items-start mb-6" vid="143">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors" vid="144">
+                                <i class="ph ph-heart-half text-3xl" vid="145"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-brand-500 group-hover:text-white transition-colors" vid="146">
+                                <i class="ph ph-arrow-up-right" vid="147"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="148">Ecocardiograma Doppler</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="149">Imágenes por ultrasonido para evaluar el tamaño, la función del músculo cardíaco y el estado de las válvulas.</p>
+                    </div>
+
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="150">
+                        <div class="flex justify-between items-start mb-6" vid="151">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-slate-700 group-hover:text-white transition-colors" vid="152">
+                                <i class="ph ph-person-simple-run text-3xl" vid="153"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-700 group-hover:text-white transition-colors" vid="154">
+                                <i class="ph ph-arrow-up-right" vid="155"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="156">Ergometría (Fuerzo)</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="157">Monitoreo continuo durante el ejercicio físico en cinta para detectar isquemia o arritmias de esfuerzo.</p>
+                    </div>
+
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-slate-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="158">
+                        <div class="flex justify-between items-start mb-6" vid="159">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-slate-600 group-hover:text-white transition-colors" vid="160">
+                                <i class="ph ph-watch text-3xl" vid="161"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-600 group-hover:text-white transition-colors" vid="162">
+                                <i class="ph ph-arrow-up-right" vid="163"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="164">Holter 24h &amp; MAPA</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="165">Dispositivos portátiles para registro continuo del ritmo cardíaco o presión arterial durante la actividad diaria.</p>
+                    </div>
+
+                    
+                    <div class="bg-white p-8 rounded-2xl border-l-[6px] border-l-slate-500 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" vid="166">
+                        <div class="flex justify-between items-start mb-6" vid="167">
+                            <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 group-hover:bg-slate-500 group-hover:text-white transition-colors" vid="168">
+                                <i class="ph ph-file-text text-3xl" vid="169"></i>
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-500 group-hover:text-white transition-colors" vid="170">
+                                <i class="ph ph-arrow-up-right" vid="171"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" vid="172">Riesgo Quirúrgico</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-0" vid="173">Examen exhaustivo pre-operatorio para determinar la seguridad cardiovascular ante intervenciones quirúrgicas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="equipo" class="py-24 bg-white overflow-hidden relative" vid="174">
+            
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-50 -z-10 rounded-l-[100px]" vid="175"></div>
+
+            <div class="max-w-7xl mx-auto px-6" vid="176">
+                <div class="text-center max-w-2xl mx-auto mb-16" vid="177">
+                    <h2 class="text-sm font-bold text-brand-600 uppercase tracking-widest mb-3" vid="178">Staff Médico</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900" vid="179">Especialistas de renombre</h3>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" vid="180">
+                    
+                    
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow" vid="181">
+                        <div class="w-32 h-32 shrink-0 rounded-2xl bg-brand-50 overflow-hidden relative border-4 border-white shadow-inner" vid="182">
+                            <div class="absolute inset-0 flex items-center justify-center text-brand-300" vid="183">
+                                <i class="ph-fill ph-user text-5xl" vid="184"></i>
+                            </div>
+                        </div>
+                        <div class="text-center sm:text-left flex-1" vid="185">
+                            <div class="inline-block px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-bold mb-2" vid="186">Director Médico</div>
+                            <h4 class="text-xl font-bold text-slate-900" vid="187">Dr. Alejandro Rodríguez</h4>
+                            <p class="text-sm font-semibold text-slate-500 mb-3" vid="188">Cardiología Clínica</p>
+                            <p class="text-sm text-slate-600 line-clamp-2" vid="189">Especialista jerarquizado con más de 30 años de experiencia en prevención y tratamiento de enfermedades coronarias.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow" vid="190">
+                        <div class="w-32 h-32 shrink-0 rounded-2xl bg-slate-100 overflow-hidden relative border-4 border-white shadow-inner" vid="191">
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-300" vid="192">
+                                <i class="ph-fill ph-user text-5xl" vid="193"></i>
+                            </div>
+                        </div>
+                        <div class="text-center sm:text-left flex-1" vid="194">
+                            <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-2" vid="195">Jefa de Imágenes</div>
+                            <h4 class="text-xl font-bold text-slate-900" vid="196">Dra. María Laura Silva</h4>
+                            <p class="text-sm font-semibold text-slate-500 mb-3" vid="197">Ecocardiografía Doppler</p>
+                            <p class="text-sm text-slate-600 line-clamp-2" vid="198">Referente en ecocardiografía transesofágica y evaluación de valvulopatías complejas. Docente universitaria.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow" vid="199">
+                        <div class="w-32 h-32 shrink-0 rounded-2xl bg-slate-100 overflow-hidden relative border-4 border-white shadow-inner" vid="200">
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-300" vid="201">
+                                <i class="ph-fill ph-user text-5xl" vid="202"></i>
+                            </div>
+                        </div>
+                        <div class="text-center sm:text-left flex-1" vid="203">
+                            <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-2" vid="204">Especialista</div>
+                            <h4 class="text-xl font-bold text-slate-900" vid="205">Dr. Martín Benítez</h4>
+                            <p class="text-sm font-semibold text-slate-500 mb-3" vid="206">Electrofisiología</p>
+                            <p class="text-sm text-slate-600 line-clamp-2" vid="207">Dedicado al diagnóstico y tratamiento ablativo de arritmias cardíacas e implante de marcapasos.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-shadow" vid="208">
+                        <div class="w-32 h-32 shrink-0 rounded-2xl bg-slate-100 overflow-hidden relative border-4 border-white shadow-inner" vid="209">
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-300" vid="210">
+                                <i class="ph-fill ph-user text-5xl" vid="211"></i>
+                            </div>
+                        </div>
+                        <div class="text-center sm:text-left flex-1" vid="212">
+                            <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-2" vid="213">Especialista</div>
+                            <h4 class="text-xl font-bold text-slate-900" vid="214">Dra. Valeria Gómez</h4>
+                            <p class="text-sm font-semibold text-slate-500 mb-3" vid="215">Cardiología Deportiva</p>
+                            <p class="text-sm text-slate-600 line-clamp-2" vid="216">Evaluación integral orientada a deportistas de alto rendimiento y prescripción de ejercicio en pacientes cardiópatas.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="mt-12 text-center" vid="217">
+                    <button class="inline-flex items-center gap-2 text-brand-600 font-bold hover:text-brand-800 transition-colors border-b-2 border-brand-200 hover:border-brand-600 pb-1" vid="218">
+                        Conocer a todo el equipo médico <i class="ph ph-arrow-right" vid="219"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="pacientes" class="bg-slate-900 py-24 relative overflow-hidden" vid="220">
+            <div class="absolute inset-0 opacity-5 dot-pattern text-white" vid="221"></div>
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-900/30 blur-3xl -z-0" vid="222"></div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10" vid="223">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center" vid="224">
+                    
+                    <div class="lg:col-span-5" vid="225">
+                        <h2 class="text-brand-400 font-bold tracking-widest uppercase text-sm mb-4" vid="226">Portal del Paciente</h2>
+                        <h3 class="text-4xl font-extrabold text-white mb-6 leading-tight" vid="227">Agilice su visita al instituto.</h3>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed" vid="228">
+                            Encuentre toda la información necesaria para sus estudios, indicaciones de ayuno, y listado actualizado de coberturas médicas.
+                        </p>
+                        
+                        <div class="space-y-6 mb-10" vid="229">
+                            <div class="flex items-start gap-4" vid="230">
+                                <div class="w-10 h-10 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0 border border-brand-400/30" vid="231">
+                                    <i class="ph-fill ph-file-text text-brand-300 text-lg" vid="232"></i>
+                                </div>
+                                <div vid="233">
+                                    <h4 class="text-white font-semibold mb-1" vid="234">Indicaciones Previas</h4>
+                                    <p class="text-slate-400 text-sm" vid="235">Preparación específica según el estudio a realizar.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4" vid="236">
+                                <div class="w-10 h-10 rounded-full bg-brand-500/20 flex items-center justify-center shrink-0 border border-brand-400/30" vid="237">
+                                    <i class="ph-fill ph-shield-check text-brand-300 text-lg" vid="238"></i>
+                                </div>
+                                <div vid="239">
+                                    <h4 class="text-white font-semibold mb-1" vid="240">Obras Sociales</h4>
+                                    <p class="text-slate-400 text-sm" vid="241">Cartilla de prestadores y planes aceptados.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="px-6 py-3 rounded-full bg-white text-slate-900 font-bold hover:bg-brand-50 transition-colors" vid="242">
+                            Ingresar al Portal
+                        </button>
+                    </div>
+
+                    <div class="lg:col-span-7" vid="243">
+                        <div class="bg-slate-800/50 backdrop-blur-md rounded-[2rem] border border-slate-700/50 p-8 md:p-10 shadow-2xl" vid="244">
+                            <div class="flex items-center justify-between mb-8 pb-6 border-b border-slate-700" vid="245">
+                                <h4 class="text-2xl font-bold text-white" vid="246">Checklist 1era Visita</h4>
+                                <div class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold border border-amber-500/30" vid="247">Importante</div>
+                            </div>
+                            
+                            <ul class="space-y-4" vid="248">
+                                <li class="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-700/50" vid="249">
+                                    <div class="w-6 h-6 rounded-full bg-brand-500 flex items-center justify-center text-white shrink-0" vid="250">
+                                        <i class="ph-bold ph-check text-xs" vid="251"></i>
+                                    </div>
+                                    <span class="text-slate-200 font-medium" vid="252">DNI original y Credencial digital o física.</span>
+                                </li>
+                                <li class="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-700/50" vid="253">
+                                    <div class="w-6 h-6 rounded-full bg-brand-500 flex items-center justify-center text-white shrink-0" vid="254">
+                                        <i class="ph-bold ph-check text-xs" vid="255"></i>
+                                    </div>
+                                    <span class="text-slate-200 font-medium" vid="256">Orden médica autorizada (si aplica).</span>
+                                </li>
+                                <li class="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-700/50" vid="257">
+                                    <div class="w-6 h-6 rounded-full bg-brand-500 flex items-center justify-center text-white shrink-0" vid="258">
+                                        <i class="ph-bold ph-check text-xs" vid="259"></i>
+                                    </div>
+                                    <span class="text-slate-200 font-medium" vid="260">Estudios cardiológicos y análisis de laboratorio previos.</span>
+                                </li>
+                                <li class="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-700/50" vid="261">
+                                    <div class="w-6 h-6 rounded-full bg-brand-500 flex items-center justify-center text-white shrink-0" vid="262">
+                                        <i class="ph-bold ph-check text-xs" vid="263"></i>
+                                    </div>
+                                    <span class="text-slate-200 font-medium" vid="264">Detalle de medicación actual (nombres y dosis).</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contacto" class="py-24 bg-white relative" vid="265">
+            <div class="max-w-7xl mx-auto px-6" vid="266">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start" vid="267">
+                    
+                    
+                    <div id="turnos" class="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-xl shadow-slate-200/50 relative z-10" vid="268">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-50 rounded-bl-full -z-10 opacity-50" vid="269"></div>
+                        
+                        <h4 class="text-3xl font-extrabold text-slate-900 mb-2" vid="270">Solicitar Atención</h4>
+                        <p class="text-slate-500 text-sm mb-8 font-medium" vid="271">Complete el formulario y nuestro equipo de admisión lo contactará a la brevedad.</p>
+                        
+                        <form class="space-y-6" vid="272">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" vid="273">
+                                <div vid="274">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-2" vid="275">Nombre Completo</label>
+                                    <input type="text" class="w-full bg-slate-50 border-none text-slate-900 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white p-4 transition-colors font-medium" placeholder="Ej. Juan Pérez" vid="276">
+                                </div>
+                                <div vid="277">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-2" vid="278">Teléfono Celular</label>
+                                    <input type="tel" class="w-full bg-slate-50 border-none text-slate-900 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white p-4 transition-colors font-medium" placeholder="Cod. Área + Número" vid="279">
+                                </div>
+                            </div>
+                            
+                            <div vid="280">
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-2" vid="281">Especialidad / Motivo</label>
+                                <div class="relative" vid="282">
+                                    <select class="w-full bg-slate-50 border-none text-slate-700 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white p-4 appearance-none font-medium transition-colors" vid="283">
+                                        <option value="" vid="284">Seleccione el motivo principal</option>
+                                        <option value="consulta" vid="285">Consulta de Primera Vez</option>
+                                        <option value="control" vid="286">Control Cardiológico</option>
+                                        <option value="estudios" vid="287">Realización de Estudios</option>
+                                        <option value="apto" vid="288">Apto Físico / Pre-quirúrgico</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500" vid="289">
+                                        <i class="ph-bold ph-caret-down" vid="290"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div vid="291">
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-2" vid="292">Comentarios (Opcional)</label>
+                                <textarea rows="3" class="w-full bg-slate-50 border-none text-slate-900 text-sm rounded-xl focus:ring-2 focus:ring-brand-500 focus:bg-white p-4 transition-colors font-medium resize-none" placeholder="Preferencia de días, horarios o profesional..." vid="293"></textarea>
+                            </div>
+
+                            <button type="button" class="w-full py-4 rounded-xl bg-slate-900 text-white font-bold text-lg hover:bg-brand-600 transition-colors shadow-lg shadow-slate-900/20 flex items-center justify-center gap-2" vid="294">
+                                Enviar Solicitud <i class="ph-bold ph-paper-plane-right" vid="295"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    
+                    <div class="lg:py-10" vid="296">
+                        <h2 class="text-sm font-bold text-brand-600 tracking-widest uppercase mb-4" vid="297">Información de Contacto</h2>
+                        <h3 class="text-4xl font-extrabold text-slate-900 mb-10" vid="298">Vías de comunicación directas.</h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12" vid="299">
+                            <div class="flex flex-col gap-2" vid="300">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-2" vid="301">
+                                    <i class="ph-fill ph-phone-call text-2xl" vid="302"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-lg" vid="303">Central Telefónica</h4>
+                                <p class="text-slate-600 font-medium" vid="304">(011) 4555-0000</p>
+                                <p class="text-slate-400 text-sm" vid="305">Lunes a Viernes 8 a 20hs</p>
+                            </div>
+
+                            <div class="flex flex-col gap-2" vid="306">
+                                <div class="w-12 h-12 rounded-2xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center mb-2" vid="307">
+                                    <i class="ph-fill ph-whatsapp-logo text-2xl" vid="308"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-lg" vid="309">WhatsApp Turnos</h4>
+                                <a href="#" class="text-brand-600 font-bold hover:underline" vid="310">+54 9 11 5555-0001</a>
+                                <p class="text-slate-400 text-sm" vid="311">Solo mensajes de texto</p>
+                            </div>
+
+                            <div class="flex flex-col gap-2 sm:col-span-2 mt-4 pt-8 border-t border-slate-100" vid="312">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-600 flex items-center justify-center mb-2" vid="313">
+                                    <i class="ph-fill ph-map-pin text-2xl" vid="314"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-lg" vid="315">Sede Central</h4>
+                                <p class="text-slate-600 font-medium" vid="316">Av. del Libertador San Martín 1234, Planta Baja.<br vid="317">Vicente López, Buenos Aires.</p>
+                                <a href="#" class="inline-flex items-center gap-1 text-sm font-bold text-brand-600 mt-2 hover:text-brand-800" vid="318">
+                                    Ver en Google Maps <i class="ph-bold ph-arrow-right" vid="319"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="bg-slate-950 pt-20 pb-8 border-t-[8px] border-brand-600" vid="320">
+        <div class="max-w-7xl mx-auto px-6" vid="321">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16" vid="322">
+                
+                <div class="lg:col-span-4" vid="323">
+                    <a href="#" class="flex items-center gap-3 mb-6" vid="324">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-slate-900" vid="325">
+                            <i class="ph-fill ph-heartbeat text-2xl" vid="326"></i>
+                        </div>
+                        <div class="flex flex-col" vid="327">
+                            <span class="font-bold text-lg leading-none text-white tracking-tight" vid="328">Instituto</span>
+                            <span class="font-medium text-sm leading-none text-brand-400" vid="329">Cardiovascular</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 pr-4" vid="330">
+                        Centro médico especializado en prevención, diagnóstico y tratamiento de enfermedades cardiovasculares en Zona Norte, Buenos Aires.
+                    </p>
+                    <div class="flex gap-3" vid="331">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-brand-600 transition-colors" vid="332">
+                            <i class="ph-fill ph-instagram-logo text-lg" vid="333"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-brand-600 transition-colors" vid="334">
+                            <i class="ph-fill ph-facebook-logo text-lg" vid="335"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-brand-600 transition-colors" vid="336">
+                            <i class="ph-fill ph-linkedin-logo text-lg" vid="337"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:col-start-7" vid="338">
+                    <h4 class="text-white font-bold tracking-wider uppercase text-xs mb-6" vid="339">Navegación</h4>
+                    <ul class="space-y-3" vid="340">
+                        <li vid="341"><a href="#inicio" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="342">Inicio</a></li>
+                        <li vid="343"><a href="#especialidades" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="344">Especialidades</a></li>
+                        <li vid="345"><a href="#equipo" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="346">Staff Médico</a></li>
+                        <li vid="347"><a href="#pacientes" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="348">Portal Pacientes</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2" vid="349">
+                    <h4 class="text-white font-bold tracking-wider uppercase text-xs mb-6" vid="350">Institucional</h4>
+                    <ul class="space-y-3" vid="351">
+                        <li vid="352"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="353">Nuestra Historia</a></li>
+                        <li vid="354"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="355">Obras Sociales</a></li>
+                        <li vid="356"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="357">Trabajá con nosotros</a></li>
+                        <li vid="358"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="359">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2" vid="360">
+                    <h4 class="text-white font-bold tracking-wider uppercase text-xs mb-6" vid="361">Legales</h4>
+                    <ul class="space-y-3" vid="362">
+                        <li vid="363"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="364">Términos de uso</a></li>
+                        <li vid="365"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="366">Privacidad</a></li>
+                        <li vid="367"><a href="#" class="text-slate-400 text-sm font-medium hover:text-brand-400 transition-colors" vid="368">Defensa al Consumidor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4" vid="369">
+                <p class="text-slate-500 text-xs font-medium" vid="370">
+                    © 2024 Instituto Cardiovascular. Todos los derechos reservados.
+                </p>
+                <div class="flex items-center gap-2 text-slate-500 text-xs font-medium" vid="371">
+                    <i class="ph-fill ph-heart text-brand-500" vid="372"></i> Diseñado en Buenos Aires
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
