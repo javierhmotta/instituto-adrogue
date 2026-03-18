@@ -2,23 +2,28 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "María L.",
-    text: "Excelente atención del Dr. Ferreiro y todo su equipo. Me hicieron sentir contenida desde la primera consulta. El instituto es muy prolijo y organizado.",
+    name: "Betty C.",
+    text: "Hace años que me atiendo con el Dr. Ferreiro y realmente estoy muy contenta. Muy buena atención por parte de la secretaria. Y el lugar muy confortable. Muy recomendable.",
     rating: 5,
   },
   {
-    name: "Roberto G.",
-    text: "Hace años que me atiendo acá. Los estudios son rápidos, el personal muy amable y los resultados siempre están a tiempo. Lo recomiendo a toda la familia.",
+    name: "Gabriel L.",
+    text: "Excelente atención tanto del Dr. Ferreiro como de la secretaria, puntual cumplimiento en los horarios, clara explicación por parte del Dr. en cada uno de los exámenes. Muy rápido el envío de los informes con las imágenes correspondientes. Excelentes instalaciones, muy confortable todo.",
     rating: 5,
   },
   {
-    name: "Susana P.",
-    text: "Después de un susto con el corazón, el equipo de rehabilitación cardiovascular me ayudó a recuperarme. Profesionales de primera y un trato muy humano.",
+    name: "Jose V.",
+    text: "Muy conforme con el trato recibido en el Instituto. El personal administrativo es muy cordial. La atención del Dr. Ferreiro es de excelencia.",
     rating: 5,
   },
   {
-    name: "Carlos M.",
-    text: "Muy buena experiencia. El doctor se tomó el tiempo de explicarme todo con paciencia. Las instalaciones son modernas y está todo muy cerca en Adrogué.",
+    name: "Laura P.",
+    text: "Excelente atención del Dr. Ferreiro. El personal administrativo del Instituto tuvo un trato muy amable y una gestión eficaz. Muy conforme con el trato recibido.",
+    rating: 5,
+  },
+  {
+    name: "María Silvia M.",
+    text: "Me atiendo con el Dr. Daniel Ferreiro, a quien considero un excelente profesional. Siempre me he sentido cuidada y respetada en las consultas.",
     rating: 5,
   },
 ]
@@ -52,7 +57,7 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-5">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 md:gap-5">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
